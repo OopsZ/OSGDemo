@@ -2,9 +2,9 @@
 <VisualStudioProject
 	ProjectType="Visual C++"
 	Version="9.00"
-	Name="Common"
-	ProjectGUID="{E59D7C55-E8B3-4D7E-859E-D6498DA28250}"
-	RootNamespace="Common"
+	Name="BaseTools"
+	ProjectGUID="{FF77B6C1-D0D3-40B8-A286-0CA733DA4378}"
+	RootNamespace="BaseTools"
 	Keyword="Win32Proj"
 	TargetFrameworkVersion="196613"
 	>
@@ -41,7 +41,8 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS;_USRDLL;COMMON_EXPORTS"
+				AdditionalIncludeDirectories="&quot;$(SELFDIR)\include&quot;"
+				PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS;_USRDLL;BASETOOLS_EXPORTS"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="3"
@@ -115,7 +116,7 @@
 				Name="VCCLCompilerTool"
 				Optimization="2"
 				EnableIntrinsicFunctions="true"
-				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS;_USRDLL;COMMON_EXPORTS"
+				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS;_USRDLL;BASETOOLS_EXPORTS"
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
 				UsePrecompiledHeader="0"
@@ -134,7 +135,7 @@
 			<Tool
 				Name="VCLinkerTool"
 				LinkIncremental="1"
-				GenerateDebugInformation="false"
+				GenerateDebugInformation="true"
 				SubSystem="2"
 				OptimizeReferences="2"
 				EnableCOMDATFolding="2"

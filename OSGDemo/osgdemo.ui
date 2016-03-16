@@ -29,20 +29,27 @@
     </property>
     <addaction name="actionOpen"/>
    </widget>
+   <widget class="QMenu" name="menuTools">
+    <property name="title">
+     <string>Tools</string>
+    </property>
+    <addaction name="actionCordon"/>
+   </widget>
    <addaction name="menuFile"/>
-  </widget>
-  <widget class="QToolBar" name="mainToolBar">
-   <attribute name="toolBarArea">
-    <enum>TopToolBarArea</enum>
-   </attribute>
-   <attribute name="toolBarBreak">
-    <bool>false</bool>
-   </attribute>
+   <addaction name="menuTools"/>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
   <action name="actionOpen">
    <property name="text">
     <string>添加模型</string>
+   </property>
+  </action>
+  <action name="actionCordon">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Cordon</string>
    </property>
   </action>
  </widget>

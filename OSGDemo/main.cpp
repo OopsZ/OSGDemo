@@ -7,7 +7,7 @@ int main(int argc, char *argv[])
 {
 	QApplication a(argc, argv);
 	FileUtils::ins()->init(QApplication::applicationDirPath()
-		.append("/../Data").toLocal8Bit().data());
+		.append("/Data").toLocal8Bit().data());
 
 	OSGDemo w;
 	w.show();

@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include "ui_osgdemo.h"
 #include "widget3d.h"
+#include "CordonTool.h"
 
 class OSGDemo : public QMainWindow
 {
@@ -15,6 +16,7 @@ public:
 
 private slots:
 	void slotAddModels();
+	void slotCordon();
 
 private:
 	void initDockList();
@@ -22,6 +24,7 @@ private:
 private:
 	Ui::OSGDemoClass ui;
 	Widget3D* m_p3DWidget;
+	osg::ref_ptr<CordonTool> m_pCordon;
 };
 
 #endif // OSGDEMO_H

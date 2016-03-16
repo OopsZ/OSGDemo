@@ -8,6 +8,7 @@ OSGDemo::OSGDemo(QWidget *parent)
 {
 	ui.setupUi(this);
 
+	m_pCordon = NULL;
 	m_p3DWidget = new Widget3D(this);
 	this->setCentralWidget(m_p3DWidget);
 
@@ -15,6 +16,7 @@ OSGDemo::OSGDemo(QWidget *parent)
 	Core::ins()->setViewer(m_p3DWidget);
 
 	connect(ui.actionOpen, SIGNAL(triggered()), this, SLOT(slotAddModels()));
+	connect(ui.actionCordon, SIGNAL(triggered()), this, SLOT(slotCordon()));
 }
 
 OSGDemo::~OSGDemo()
@@ -40,4 +42,15 @@ void OSGDemo::slotAddModels()
 void OSGDemo::initDockList()
 {
 
+}
+
+void OSGDemo::slotCordon()
+{
+	if (NULL == m_pCordon)
+	{
+		m_pCordon = new CordonTool;
+		Core::ins()->getViewer()->addEventHandler(m_pCordon);
+	}
+
+	m_pCordon->beginCordon();
 }

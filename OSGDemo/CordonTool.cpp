@@ -25,6 +25,7 @@ void CordonTool::mouseLeftClicked( osg::Vec3& pos )
 void CordonTool::doubleClicked()
 {
 	emit signalFinishedCordon();
+	endCordon();
 }
 
 void CordonTool::beginCordon()

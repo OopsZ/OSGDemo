@@ -16,7 +16,7 @@
 // 所得目录即为根目录，之后获取的目录都以此为基目录
 // FileUtils::ins()->init("D:/project/");
 ////////////////////////////////////////////////
-class COMMON_EXPORT FileUtils
+class BASETOOLS_EXPORT FileUtils
 {
 public:
 	static FileUtils* ins();

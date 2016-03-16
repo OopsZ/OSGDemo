@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OSGDemo", "OSGDemo\OSGDemo.vcproj", "{53FB8A99-4B65-4A10-A6C9-E0B851207C87}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Common", "Common\Common.vcproj", "{E59D7C55-E8B3-4D7E-859E-D6498DA28250}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Widget3D", "Widget3D\Widget3D.vcproj", "{A6D3906A-2835-4285-99EA-BC571B1D371A}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Animation", "Animation\Animation.vcproj", "{6D2CC9F1-E09E-48F4-8415-16AE27FBDC9C}"
@@ -12,6 +10,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PickTools", "PickTools\PickTools.vcproj", "{0CD6D456-EC22-494E-91BA-DEF7F3157F15}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ModelTools", "ModelTools\ModelTools.vcproj", "{287C81EB-B642-41A3-8728-D4FB3C797799}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BaseTools", "BaseTools\BaseTools.vcproj", "{FF77B6C1-D0D3-40B8-A286-0CA733DA4378}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,6 @@ Global
 		{53FB8A99-4B65-4A10-A6C9-E0B851207C87}.Debug|Win32.Build.0 = Debug|Win32
 		{53FB8A99-4B65-4A10-A6C9-E0B851207C87}.Release|Win32.ActiveCfg = Release|Win32
 		{53FB8A99-4B65-4A10-A6C9-E0B851207C87}.Release|Win32.Build.0 = Release|Win32
-		{E59D7C55-E8B3-4D7E-859E-D6498DA28250}.Debug|Win32.ActiveCfg = Debug|Win32
-		{E59D7C55-E8B3-4D7E-859E-D6498DA28250}.Debug|Win32.Build.0 = Debug|Win32
-		{E59D7C55-E8B3-4D7E-859E-D6498DA28250}.Release|Win32.ActiveCfg = Release|Win32
-		{E59D7C55-E8B3-4D7E-859E-D6498DA28250}.Release|Win32.Build.0 = Release|Win32
 		{A6D3906A-2835-4285-99EA-BC571B1D371A}.Debug|Win32.ActiveCfg = Debug|Win32
 		{A6D3906A-2835-4285-99EA-BC571B1D371A}.Debug|Win32.Build.0 = Debug|Win32
 		{A6D3906A-2835-4285-99EA-BC571B1D371A}.Release|Win32.ActiveCfg = Release|Win32
@@ -43,6 +39,10 @@ Global
 		{287C81EB-B642-41A3-8728-D4FB3C797799}.Debug|Win32.Build.0 = Debug|Win32
 		{287C81EB-B642-41A3-8728-D4FB3C797799}.Release|Win32.ActiveCfg = Release|Win32
 		{287C81EB-B642-41A3-8728-D4FB3C797799}.Release|Win32.Build.0 = Release|Win32
+		{FF77B6C1-D0D3-40B8-A286-0CA733DA4378}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FF77B6C1-D0D3-40B8-A286-0CA733DA4378}.Debug|Win32.Build.0 = Debug|Win32
+		{FF77B6C1-D0D3-40B8-A286-0CA733DA4378}.Release|Win32.ActiveCfg = Release|Win32
+		{FF77B6C1-D0D3-40B8-A286-0CA733DA4378}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
