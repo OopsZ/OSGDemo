@@ -26,3 +26,13 @@
 *.exe
 *.out
 *.app
+
+# vcproject
+*.ncb
+*.suo
+*.user
+*.sdf
+*.opensdf
+
+Win32
+GeneratedFiles
