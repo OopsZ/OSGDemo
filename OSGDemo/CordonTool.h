@@ -21,7 +21,6 @@ public:
 	// ¾¯½äÏß²Ù×÷
 	void beginCordon();
 	void endCordon();
-	void deleteCordonByName(const std::string& name);
 
 protected:
 	virtual void mouseLeftClicked(osg::Vec3& pos);

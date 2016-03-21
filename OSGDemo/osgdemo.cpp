@@ -2,6 +2,8 @@
 #include <QFileDialog>
 #include <osgDB/ReadFile>
 #include "Core.h"
+#include "EagleEyeManipulator.h"
+#include "DirectionTool.h"
 
 OSGDemo::OSGDemo(QWidget *parent)
 	: QMainWindow(parent)
@@ -14,6 +16,16 @@ OSGDemo::OSGDemo(QWidget *parent)
 
 	Core::ins()->setRoot(m_p3DWidget->getRoot());
 	Core::ins()->setViewer(m_p3DWidget);
+
+	osg::Vec3d eye = osg::Vec3d(3.50452,-80.6569,18.3717);
+	osg::Vec3d center = osg::Vec3d(-1.0,-40.0,2.0);
+	osg::Vec3d up = DirectionTool::getUpDir(center - eye);
+
+	EagleEyeManipulator* manipu = new EagleEyeManipulator;
+	manipu->setHomePosition(eye, center, up);
+	manipu->home(0);
+	manipu->setCenter(osg::Vec3(-1.0,-40.0,2.0));
+	m_p3DWidget->setCameraManipulator(manipu);
 
 	connect(ui.actionOpen, SIGNAL(triggered()), this, SLOT(slotAddModels()));
 	connect(ui.actionCordon, SIGNAL(triggered()), this, SLOT(slotCordon()));

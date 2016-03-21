@@ -16,6 +16,7 @@
 #pragma comment(lib, "Widget3Dd.lib")
 #pragma comment(lib, "PickToolsd.lib")
 #pragma comment(lib, "ModelToolsd.lib")
+#pragma comment(lib, "Manipulatord.lib")
 #else
 #pragma comment(lib, "osg.lib")
 #pragma comment(lib, "osgDB.lib")
@@ -25,6 +26,7 @@
 #pragma comment(lib, "Widget3D.lib")
 #pragma comment(lib, "PickTools.lib")
 #pragma comment(lib, "ModelTools.lib")
+#pragma comment(lib, "Manipulator.lib")
 #endif
 
 #endif // OSGDEMO_LIB_H

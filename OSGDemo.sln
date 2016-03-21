@@ -13,6 +13,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ModelTools", "ModelTools\Mo
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BaseTools", "BaseTools\BaseTools.vcproj", "{FF77B6C1-D0D3-40B8-A286-0CA733DA4378}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Manipulator", "Manipulator\Manipulator.vcproj", "{75BD23B6-0946-43A2-BF11-846B0E889DAF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -43,6 +45,10 @@ Global
 		{FF77B6C1-D0D3-40B8-A286-0CA733DA4378}.Debug|Win32.Build.0 = Debug|Win32
 		{FF77B6C1-D0D3-40B8-A286-0CA733DA4378}.Release|Win32.ActiveCfg = Release|Win32
 		{FF77B6C1-D0D3-40B8-A286-0CA733DA4378}.Release|Win32.Build.0 = Release|Win32
+		{75BD23B6-0946-43A2-BF11-846B0E889DAF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{75BD23B6-0946-43A2-BF11-846B0E889DAF}.Debug|Win32.Build.0 = Debug|Win32
+		{75BD23B6-0946-43A2-BF11-846B0E889DAF}.Release|Win32.ActiveCfg = Release|Win32
+		{75BD23B6-0946-43A2-BF11-846B0E889DAF}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

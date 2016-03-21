@@ -10,6 +10,6 @@ int main(int argc, char *argv[])
 		.append("/Data").toLocal8Bit().data());
 
 	OSGDemo w;
-	w.show();
+	w.showMaximized();
 	return a.exec();
 }
