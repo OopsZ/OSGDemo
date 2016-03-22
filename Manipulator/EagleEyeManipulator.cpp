@@ -19,7 +19,7 @@ EagleEyeManipulator::EagleEyeManipulator()
 	m_fLookMinDistance = 2.0f;
 	m_fLookMaxDistnace = 100.0f;
 
-	m_fLookDownAngle = osg::PI_2 * 0.5;
+	m_fLookDownAngle = osg::PI_4;
 	m_fLookDownMinAngle = osg::PI_2 * 0.05;
 	m_fLookDownMaxAngle = osg::PI_2 * 0.95;
 

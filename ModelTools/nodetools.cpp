@@ -1,4 +1,4 @@
-#include "nodetools.h"
+#include "NodeTools.h"
 #include <osg/Material>
 #include "Lib.h"
 

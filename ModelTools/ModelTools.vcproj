@@ -180,11 +180,15 @@
 				>
 			</File>
 			<File
-				RelativePath=".\findnode.cpp"
+				RelativePath=".\FindNode.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\nodetools.cpp"
+				RelativePath=".\ModelBase.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\NodeTools.cpp"
 				>
 			</File>
 		</Filter>
@@ -202,7 +206,7 @@
 				>
 			</File>
 			<File
-				RelativePath=".\findnode.h"
+				RelativePath=".\FindNode.h"
 				>
 			</File>
 			<File
@@ -210,7 +214,11 @@
 				>
 			</File>
 			<File
-				RelativePath=".\nodetools.h"
+				RelativePath=".\ModelBase.h"
+				>
+			</File>
+			<File
+				RelativePath=".\NodeTools.h"
 				>
 			</File>
 		</Filter>

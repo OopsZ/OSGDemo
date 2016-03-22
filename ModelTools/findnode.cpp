@@ -1,4 +1,4 @@
-#include "findnode.h"
+#include "FindNode.h"
 #include "Lib.h"
 
 FindNode::FindNode(const std::string& name)
