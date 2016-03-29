@@ -41,10 +41,10 @@ void OSGDemo::slotAddModels()
 	QStringList listModels = QFileDialog::getOpenFileNames(
 		this,
 		"Select one or more files to open",
-		"D:/SSIT/project/3dEngine/STSDK/Tool/QtDockWidget/Data",
+		"D:/SSIT/project/3dEngine/ZheJiangDianXin/Win32/Data/SceneData",
 		"Images (*.osg *.ive *.osgd)");
 
-	//m_p3DWidget->getRoot()->removeChildren(0, m_p3DWidget->getRoot()->getNumChildren());
+	m_p3DWidget->getRoot()->removeChildren(0, m_p3DWidget->getRoot()->getNumChildren());
 	foreach(QString model, listModels)
 	{
 		Core::ins()->getRoot()->addChild(osgDB::readNodeFile(model.toLocal8Bit().data()));
