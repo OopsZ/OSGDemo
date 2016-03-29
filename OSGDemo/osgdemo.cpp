@@ -1,9 +1,11 @@
 #include "osgdemo.h"
 #include <QFileDialog>
+#include <QFileInfo>
 #include <osgDB/ReadFile>
 #include "Core.h"
 #include "EagleEyeManipulator.h"
 #include "DirectionTool.h"
+#include "SceneTreeItem.h"
 
 OSGDemo::OSGDemo(QWidget *parent)
 	: QMainWindow(parent)
@@ -45,9 +47,20 @@ void OSGDemo::slotAddModels()
 		"Images (*.osg *.ive *.osgd)");
 
 	m_p3DWidget->getRoot()->removeChildren(0, m_p3DWidget->getRoot()->getNumChildren());
+	ui.treeWidget->clear();
+	ui.treeWidget->setColumnCount(1);
+	ui.treeWidget->setHeaderHidden(true);
 	foreach(QString model, listModels)
 	{
-		Core::ins()->getRoot()->addChild(osgDB::readNodeFile(model.toLocal8Bit().data()));
+		osg::Node* pNode = osgDB::readNodeFile(model.toLocal8Bit().data());
+		Core::ins()->getRoot()->addChild(pNode);
+
+		// Ìí¼Ó³¡¾°
+		QFileInfo info(model);
+		SceneTreeItem* pItem = new SceneTreeItem;
+		pItem->setText(0, info.fileName());
+		pItem->setNode(pNode);
+		ui.treeWidget->addTopLevelItem(pItem);
 	}
 }
 
