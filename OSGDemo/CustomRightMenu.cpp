@@ -1,8 +1,8 @@
 #include "CustomRightMenu.h"
 #include <QAction>
 
-CustomRightMenu::CustomRightMenu(QWidget *parent)
-	: QWidget(parent)
+CustomRightMenu::CustomRightMenu(QWidget *parent, Qt::WindowFlags f)
+	: QWidget(parent, f)
 {
 	this->resize(0, 0);
 	m_pLayout = new QVBoxLayout;
@@ -21,10 +21,10 @@ void CustomRightMenu::addAction(QPushButton* item)
 {
 	if (item)
 	{
-		item->resize(80, 25);
+		item->resize(80, 30);
 		m_pLayout->addWidget(item);
 
-		resize(80, height() + 25);
+		resize(80, height() + 30);
 	}
 }
 

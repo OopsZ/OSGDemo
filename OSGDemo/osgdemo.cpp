@@ -29,6 +29,10 @@ OSGDemo::OSGDemo(QWidget *parent)
 	manipu->setCenter(osg::Vec3(-1.0,-40.0,2.0));
 	m_p3DWidget->setCameraManipulator(manipu);
 
+	m_pSceneTree = new SceneTreeWidget(this);
+	m_pSceneTree->clear();
+	m_pSceneTree->setHeaderHidden(true);
+	ui.dockWidgetScene->setWidget(m_pSceneTree);
 	connect(ui.actionOpen, SIGNAL(triggered()), this, SLOT(slotAddModels()));
 	connect(ui.actionCordon, SIGNAL(triggered()), this, SLOT(slotCordon()));
 }
@@ -47,9 +51,8 @@ void OSGDemo::slotAddModels()
 		"Images (*.osg *.ive *.osgd)");
 
 	m_p3DWidget->getRoot()->removeChildren(0, m_p3DWidget->getRoot()->getNumChildren());
-	ui.treeWidget->clear();
-	ui.treeWidget->setColumnCount(1);
-	ui.treeWidget->setHeaderHidden(true);
+	m_pSceneTree->clear();
+	m_pSceneTree->setColumnCount(1);
 	foreach(QString model, listModels)
 	{
 		osg::Node* pNode = osgDB::readNodeFile(model.toLocal8Bit().data());
@@ -60,7 +63,7 @@ void OSGDemo::slotAddModels()
 		SceneTreeItem* pItem = new SceneTreeItem;
 		pItem->setText(0, info.fileName());
 		pItem->setNode(pNode);
-		ui.treeWidget->addTopLevelItem(pItem);
+		m_pSceneTree->addTopLevelItem(pItem);
 	}
 }
 

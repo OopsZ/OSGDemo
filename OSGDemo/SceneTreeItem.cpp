@@ -4,12 +4,12 @@
 SceneTreeItem::SceneTreeItem(QTreeWidgetItem* parent)
 	: TreeWidgetItem(parent)
 {
-	QPushButton* btn = new QPushButton(tr("¸ßÁÁ"));
+	QPushButton* btn = new QPushButton("highLight");
 	btn->setCheckable(true);
 	connect(btn, SIGNAL(clicked(bool)), this,SLOT(slotHighLight(bool)));
 	m_pMenu->addAction(btn);
 
-	btn = new QPushButton(tr("Í¸Ã÷"));
+	btn = new QPushButton("transparent");
 	btn->setCheckable(true);
 	connect(btn, SIGNAL(clicked(bool)), this, SLOT(slotTransParent(bool)));
 	m_pMenu->addAction(btn);
@@ -22,7 +22,7 @@ SceneTreeItem::~SceneTreeItem()
 
 void SceneTreeItem::setNode(osg::Node* node)
 {
-	//m_pNode = node;
+	m_pNode = node;
 
 	traveNode(this, node);
 }

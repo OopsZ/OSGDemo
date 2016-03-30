@@ -17,7 +17,7 @@ class CustomRightMenu : public QWidget
 	Q_OBJECT
 
 public:
-	CustomRightMenu(QWidget *parent = NULL);
+	CustomRightMenu(QWidget *parent = NULL, Qt::WindowFlags f = Qt::FramelessWindowHint);
 	~CustomRightMenu();
 
 	void addAction(QPushButton* item);

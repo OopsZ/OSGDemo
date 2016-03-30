@@ -54,13 +54,6 @@
      <property name="margin">
       <number>0</number>
      </property>
-     <item>
-      <widget class="QTreeWidget" name="treeWidget">
-       <property name="columnCount">
-        <number>0</number>
-       </property>
-      </widget>
-     </item>
     </layout>
    </widget>
   </widget>
